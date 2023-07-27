@@ -1,0 +1,47 @@
+
+.timeline__container{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.timeline{
+    display: flex;
+    margin: 12px;
+    flex-direction: column;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-right: 80px;
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    &__videos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 12px;
+        &__vid{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 8px;
+            text-decoration: none;
+            img{
+                aspect-ratio: 16/9;
+                font-weight: 500;
+                object-fit: cover;
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+            span{
+                margin-top: 4px;
+                width: 300px;
+                color: black;
+            }
+        }
+    }
+}

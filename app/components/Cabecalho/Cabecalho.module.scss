@@ -1,0 +1,45 @@
+.cabecalho{
+    background-color: rgb(252, 252, 252);
+    border-bottom: 1px solid #000;
+
+    &__banner{
+        background-image: url('../../assets/Banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3{
+            color: rgb(255, 255, 255);
+            font-size:32px;
+        }
+    }
+    &__perfil{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 16px;
+        padding: 12px;
+        margin-top: 4px;
+        h1{
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 3px
+        }
+        P{
+            font-size: 24px;
+            color: rgb(0, 64, 241);
+        }
+        &__img{
+            width: 80px;
+            border-radius: 100px;
+            border: 2px solid red;
+            margin-left: 80px;
+        }
+        &__desc{
+            
+        }
+    }
+}

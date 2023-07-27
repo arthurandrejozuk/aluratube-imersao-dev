@@ -1,0 +1,9 @@
+.menu{
+    margin: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__logo{
+        justify-self: start;
+    }
+}
