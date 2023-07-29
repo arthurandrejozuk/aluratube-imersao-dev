@@ -1,10 +1,21 @@
 
 import styles from './Cabecalho.module.scss';
 import config from "../../../config.json";
+import styled from 'styled-components';
+
+const Backgroundheader = styled.header`
+
+    background-color: ${({ theme }) => theme.backgroundBase};
+    border-bottom: 1px solid ${({ theme }) => theme.backgroundBase};
+    padding-top:36px;
+    h1{
+        color: ${({ theme }) => theme.textColorBase}
+    }
+`
 
 function Cabecalho() {
     return(
-        <header className={styles.cabecalho}>
+        <Backgroundheader className={styles.cabecalho}>
             <div className={styles.cabecalho__banner}>
                  <h3>Bem-vindo ao Alura-tube</h3>
             </div>
@@ -15,7 +26,7 @@ function Cabecalho() {
                     <p>{config.job}</p>
                 </div>
             </div>
-        </header>
+        </Backgroundheader>
     )
 }
 

@@ -1,8 +1,6 @@
-.cabecalho{
-    background-color: rgb(252, 252, 252);
-    border-bottom: 1px solid #000;
 
-    &__banner{
+   
+    .cabecalho__banner{
         background-image: url('../../assets/Banner.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -16,7 +14,7 @@
             font-size:32px;
         }
     }
-    &__perfil{
+    .cabecalho__perfil{
         display: flex;
         justify-content: start;
         align-items: center;
@@ -32,14 +30,10 @@
             font-size: 24px;
             color: rgb(0, 64, 241);
         }
-        &__img{
+        .cabecalho__perfil__img{
             width: 80px;
             border-radius: 100px;
             border: 2px solid red;
             margin-left: 80px;
         }
-        &__desc{
-            
-        }
     }
-}

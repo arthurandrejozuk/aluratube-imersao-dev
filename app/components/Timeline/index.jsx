@@ -1,13 +1,23 @@
 import styles from './Timeline.module.scss';
+import styled from 'styled-components';
 
-
+const BackgroundTimeline = styled.div`
+    
+    background-color: ${({ theme }) => theme.backgroundLevel1};
+    h2{
+        color: ${({ theme }) => theme.textColorBase}
+    }
+    span{
+        color: ${({ theme }) => theme.textColorBase}
+    }
+`
 
 function Timeline({searchValue, ...props}) {
 
     const playlistName = Object.keys(props.playlist);
     
     return(
-        <div key={playlistName}  className={styles.timeline__container}>
+        <BackgroundTimeline key={playlistName}  className={styles.timeline__container}>
             {playlistName.map((item) =>{
                 const videos = props.playlist[item];
                 return(
@@ -30,7 +40,7 @@ function Timeline({searchValue, ...props}) {
                     </section>
                 )
             })}
-        </div>
+        </BackgroundTimeline>
     )
 }
 
