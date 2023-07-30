@@ -18,11 +18,12 @@ export const Reset = createGlobalStyle`
     min-height: 100%;
   }
   body {
-    display: flex;
+    
     flex: 1;
+    background-color: ${({ theme }) => theme.backgroundBase};
   }
   #__next {
-    display: flex;
+    
     flex: 1;
   }
   /* Globals */
