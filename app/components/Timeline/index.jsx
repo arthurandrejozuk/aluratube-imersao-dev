@@ -12,8 +12,9 @@ const BackgroundTimeline = styled.div`
     }
 `
 
-function Timeline({searchValue, ...props}) {
+export function Timeline({searchValue, ...props}) {
 
+    
     const playlistName = Object.keys(props.playlist);
     
     return(
@@ -29,8 +30,12 @@ function Timeline({searchValue, ...props}) {
                                 const searchValueNormalize = searchValue.toLowerCase();
                                 return titleNormalize.includes(searchValueNormalize)
                             }).map(video => {
+                                const regex = /v=([a-zA-Z0-9-_]{11})/
+                                const enderecoDoVideo = video.url;
+                                const match = enderecoDoVideo.match(regex)
+                                console.log(match);
                                 return(
-                                    <a key={video.url} className={styles.timeline__videos__vid} href={video.url}>
+                                    <a key={enderecoDoVideo} className={styles.timeline__videos__vid} href={`/video?videoId=${match[1]}`}>
                                         <img src={video.thumb} alt="" />
                                         <span>{video.title}</span>
                                     </a>
@@ -44,4 +49,5 @@ function Timeline({searchValue, ...props}) {
     )
 }
 
-export default Timeline;
+ 
+  

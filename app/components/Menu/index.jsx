@@ -4,7 +4,7 @@ import DarkModeSwitch from '../DarkModeSwitch';
 
 const Background = styled.div`
 
-    background-color: ${({ theme }) => theme.backgroundBase};
+    background-color: ${({ theme }) => theme.backgroundLevel1};
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -46,7 +46,9 @@ function Menu ({valorDaPesquisa, setValorDaPesquisa}) {
 
     return(
         <Background className={"menu"} >
-            <Logo className={"menu__logo"}/>
+            <a href='/'>
+                <Logo  className={"menu__logo"}/>
+            </a>
             <div className={"menu__pesquisa"}>
                 <input placeholder="Procure aqui" type="text" onChange={(event) => {
                    setValorDaBusca(event.target.value);

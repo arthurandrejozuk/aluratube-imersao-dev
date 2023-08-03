@@ -5,7 +5,7 @@ const StyledFooter = styled.footer`
     display: flex;
     justify-content: space-around;
     padding-bottom: 36px;
-    background-color: ${({ theme }) => theme.backgroundBase};
+    background-color: ${({ theme }) => theme.backgroundLevel1};
     border-bottom: 1px solid ${({ theme }) => theme.backgroundBase};
     padding-top:36px;
     h2{

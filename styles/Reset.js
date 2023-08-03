@@ -15,11 +15,11 @@ export const Reset = createGlobalStyle`
   html {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+   
   }
   body {
     
-    flex: 1;
+    
     background-color: ${({ theme }) => theme.backgroundBase};
   }
   #__next {
