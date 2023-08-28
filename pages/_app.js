@@ -2,7 +2,7 @@
 import { ThemeProvider }  from 'styled-components';
 import { Reset } from '../styles/Reset';
 import { ColorModeProvider , ColorModeContext } from '../app/components/ColorMode';
-import React, { Children } from 'react';
+import React from 'react';
 
   const theme = {
     light: {
