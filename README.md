@@ -12,3 +12,7 @@ Esse projeto é um aplicativo para salvar seus videos favoritos e assisti-lo
 
  - [Componentes](https://github.com/arthurandrejozuk/imersao-dev/tree/main/app/components)
  - [Conexão supabase dos vídeos](https://github.com/arthurandrejozuk/imersao-dev/blob/main/app/services/videoService.js)
+
+## Sobre
+
+O projeto não está no ar, foi feito para fins educativos
